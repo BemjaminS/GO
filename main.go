@@ -41,6 +41,18 @@ func main()  {
 	 fmt.Printf("Thank you %v %v for booking %v tickets. You will recive a confirmation email at %v\n" , firstName , lastName , userTicket , email)
 	 fmt.Printf("%v Remaining ticket to %v\n" , remainingTickets , confernceName)
 
+	 //using array
+	 var bookings [50]string
+	 bookings[0] = firstName + " " + lastName
+	 //using append to dynamic array
+	 //bookings = append(bookings , firstName + " " + lastName)
+	 fmt.Printf("Print whole array: %v\n", bookings)
+	 fmt.Printf("Print First index: %v\n", bookings[0])
+	 fmt.Printf("Print Type %T\n", bookings)
+	 fmt.Printf("Print array lenght: %v\n", len(bookings))
+
+	 
+
 
 
 
